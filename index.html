@@ -4,9 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Simple Tailwind Starter</title>
+  <title>Page Headers</title>
 </head>
 <body>
-  <h1 class="text-3xl ">Simple Tailwind Starter</h1>
+  <!-- Global Container -->
+  <div class="flex justify-center items-center min-h-screen bg-blue-200">
+    <!-- Card Container -->
+    <div class="p-5 m-3 rounded-2xl shadow-xl bg-white">
+      <!-- Flex Container -->
+      <div class="flex flex-col space-y-4">
+        <!-- Nav Container -->
+        <div class="flex flex-start space-x-4">
+          <!-- Item 1 -->
+          <div class="group">
+            <p class="text-sm text-[#0D2167] mb-2">My parameters</p>
+            <div class="group-hover:border-b-2 group-hover:border-[#0D2167] duration-500"></div>
+          </div>
+          <!-- Item 2 -->
+          <div class="group">
+            <p class="text-sm text-[#0D2167] mb-2">Public</p>
+            <div class="group-hover:border-b-2 group-hover:border-[#0D2167] duration-500"></div>
+          </div>
+          <!-- Item 3 -->
+          <div class="group">
+            <p class="text-sm text-[#0D2167] mb-2">Configuration</p>
+            <div class="group-hover:border-b-2 group-hover:border-[#0D2167] duration-500"></div>
+          </div>
+        </div>
+
+        <!-- Crud Section -->
+        <div class="flex flex-col space-y-3">
+          <!-- Create Update Delete -->
+          <div class="flex flex-col space-y-3 md:flex-row md:space-y-0 justify-between items-center">
+            <h2 class="text-xl font-bold text-[#0D2167]">My Parameters
+            </h2>
+            <div class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-2">
+              <!-- Item 1 -->
+              <button class="flex items-center px-4 py-3 border border-gray-400 rounded-md">
+                <img src="images/edit.png" alt="" class="w-6 mr-2">
+                <span class="tex-sm">Edit</span>
+            </button>
+              <!-- Item 2 -->
+              <button class="flex items-center px-4 py-3 border border-gray-400 rounded-md">
+                <img src="images/delete.png" alt="" class="w-6 mr-2">
+                <span class="tex-sm">Delete</span>
+              </button>
+              <!-- Item 1 -->
+              <button class="flex items-center px-6 text-white bg-[#0D2167] py-3 border border-gray-400 rounded-md">
+                Create parameter
+              </button>
+            </div>
+          </div>
+          <!-- Search Container -->
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
